@@ -49,7 +49,7 @@ export default withMermaid(
       ],
       footer: {
         message: 'Portfolio built with VitePress',
-        copyright: '© 2024 A El Qazoui'
+        copyright: '© 2025 A El Qazoui'
       }
     },
     head: [
