@@ -7,15 +7,12 @@ hero:
  tagline: Enhancing production systems through SRE practices and automation
  actions:
    - theme: brand
-     text: View CV
+     text: Overview
      link: /curriculum-vitae
-   - theme: alt
-     text: Projects
-     link: /projects
 
 features:
  - icon:
-    src: /.vitepress/public/sre.jpg
+    src: /docs/.vitepress/public/sre.jpg
     alt: Education
     width: 48
     height: 48
@@ -24,7 +21,7 @@ features:
    link: /sre-practices-implementation
  
  - icon:
-    src: /.vitepress/public/rubik-cube.jpg
+    src: /docs/.vitepress/public/rubik-cube.jpg
     alt: Education
     width: 48
     height: 48
@@ -33,7 +30,7 @@ features:
    link: /pikube-kubernetes-service
    
  - icon:
-    src: /.vitepress/public/sigma.jpg
+    src: /docs/.vitepress/public/sigma.jpg
     alt: Education
     width: 48
     height: 48
@@ -42,7 +39,7 @@ features:
    link: /investment-management-with-python-and-machine-learning
 
  - icon:
-    src: /.vitepress/public/curly-brackets.jpg
+    src: /docs/.vitepress/public/curly-brackets.jpg
     alt: Education
     width: 48
     height: 48
