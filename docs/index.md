@@ -14,22 +14,38 @@ hero:
      link: /projects
 
 features:
- - icon: 🛠️
+ - icon:
+    src: /.vitepress/public/sre.jpg
+    alt: Education
+    width: 48
+    height: 48
    title: SRE Implementation
    details: Strategic practices and tooling for production reliability
    link: /sre-practices-implementation
  
- - icon: 🚀
+ - icon:
+    src: /.vitepress/public/rubik-cube.jpg
+    alt: Education
+    width: 48
+    height: 48
    title: PiKube Service
    details: High-availability Kubernetes cluster implementation guide
    link: /pikube-kubernetes-service
    
- - icon: 📊
+ - icon:
+    src: /.vitepress/public/sigma.jpg
+    alt: Education
+    width: 48
+    height: 48
    title: Quant Platform
    details: Investment management with Python and machine learning
    link: /investment-management-with-python-and-machine-learning
 
- - icon: ⚡
+ - icon:
+    src: /.vitepress/public/curly-brackets.jpg
+    alt: Education
+    width: 48
+    height: 48
    title: Technical Guides
    details: Development environment setup and documentation practices
    link: /development-env-cmder

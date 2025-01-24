@@ -1,4 +1,21 @@
-# Interactive Financial Python Learning Platform
+---
+layout: home
+title: "Interactive Financial Python Learning Platform"
+hero:
+  name: "Interactive Financial Python Learning Platform"
+  actions:
+    - theme: brand
+      text: "Open the Hub"
+      link: "https://aelqazouinsights.quantfinancehub.com/"
+
+features:
+  - title: "Technical Implementation"
+    details: "Explore the core technologies, key features, and data visualization approach."
+  - title: "Program Structure"
+    details: "Covers the entire EDHEC specialization: from portfolio construction to advanced ML."
+  - title: "Key Skills Acquired"
+    details: "Advanced Python for finance, risk management, portfolio optimization, investment ML."
+---
 
 After earning a specialization in [Investment Management with Python and Machine Learning](https://www.coursera.org/account/accomplishments/specialization/WUTZABL42PW8) from EDHEC Business School, I developed an educational platform combining financial expertise with Python programming.
 
