@@ -1,0 +1,16 @@
+:root {
+    --vp-c-brand: #3eaf7c;
+    --vp-c-brand-light: #4abf8a;
+    --vp-c-brand-lighter: #5ccf99;
+    --vp-c-brand-dark: #369f6b;
+    --vp-c-brand-darker: #2e8f5f;
+  }
+  
+  .vp-doc h1 {
+    color: var(--vp-c-brand);
+  }
+  
+  .vp-doc h2 {
+    border-top: 1px solid var(--vp-c-divider-light);
+    padding-top: 20px;
+  }
