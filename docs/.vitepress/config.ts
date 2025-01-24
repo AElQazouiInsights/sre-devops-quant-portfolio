@@ -9,8 +9,7 @@ export default withMermaid(
     themeConfig: {
       nav: [
         { text: 'Home', link: '/' },
-        { text: 'CV', link: '/curriculum-vitae' },
-        { text: 'Projects', link: '/projects' }
+        { text: 'About myself', link: '/curriculum-vitae' }
       ],
       sidebar: [
         {
