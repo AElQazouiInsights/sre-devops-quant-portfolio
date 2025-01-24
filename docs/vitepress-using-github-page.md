@@ -43,17 +43,17 @@ Create the necessary directories and files:
 ```bash
 # Create project structure
 mkdir docs
-mkdir -p .vitepress/theme
+mkdir -p docs/.vitepress/theme
 
 # Create main documentation file
 echo "# Welcome to Documentation" > docs/index.md
 
 # Create VitePress configuration file
-touch .vitepress/config.ts
+touch docs/.vitepress/config.ts
 
 # Create theme files
-touch .vitepress/theme/custom.css
-touch .vitepress/theme/index.ts
+touch docs/.vitepress/theme/custom.css
+touch docs/.vitepress/theme/index.ts
 ```
 
 ## 4. Node.js Installation & Verification
@@ -90,10 +90,10 @@ npm install -D gh-pages
 ```json
 {
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview",
-    "deploy": "gh-pages -d .vitepress/dist"
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "deploy": "gh-pages -d docs/.vitepress/dist"
   }
 }
 ```

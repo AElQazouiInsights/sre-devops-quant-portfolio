@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. Download Cmder from [cmder.net](https://cmder.net)
+1. Download Cmder from [cmder.net](https://cmder.app/)
 2. Extract to `C:\Users\<WindowUser>\bin\cmder`
 
 ## Environment Setup

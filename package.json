@@ -1,13 +1,16 @@
 {
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "vitepress": "^1.6.3"
+    "markdown-it-mermaid": "^0.2.5",
+    "mermaid": "^11.4.1",
+    "vitepress": "^1.6.3",
+    "vitepress-plugin-mermaid": "^2.0.17"
   },
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "deploy": "gh-pages -d .vitepress/dist"
+    "deploy": "gh-pages -d docs/.vitepress/dist"
   },
   "type": "module"
 }
