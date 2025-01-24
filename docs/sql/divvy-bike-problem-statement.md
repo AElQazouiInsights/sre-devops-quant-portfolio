@@ -6,10 +6,10 @@ In this article, I demonstrate how to design and implement a comprehensive billi
 
 Design a billing system for Divvy's bike share service with the following requirements:
 
-- **`Day Pass Fee`**: Users can purchase a **Day Pass** for **$15**, allowing unlimited bike rides within a **24-hour period**.
+- **`Day Pass Fee`**: Users can purchase a **Day Pass** for **£15**, allowing unlimited bike rides within a **24-hour period**.
   - Each ride can last up to **3 hours** without incurring additional charges.
 
-- **`Overtime Charges`**: If a user keeps a bike out for longer than **3 hours** in a single ride, they are charged an additional **$3** for every additional **30 minutes** beyond the initial 3 hours.
+- **`Overtime Charges`**: If a user keeps a bike out for longer than **3 hours** in a single ride, they are charged an additional **£3** for every additional **30 minutes** beyond the initial 3 hours.
   - Partial intervals are rounded up to the next full 30 minutes. For example, an extra 5 minutes over the 3-hour limit results in a full 30-minute charge.
 
 - **`Edge Cases to Consider`**:
@@ -204,7 +204,7 @@ Run the script
 python setup_database.py
 ```
 
-**Outcome**: The SQLite database bike_share.db is created with all the tables defined in **`schema.sql`**.
+**Outcome**: The SQLite database `bike_share.db` is created with all the tables defined in **`schema.sql`**.
 
 ## Practical Example: End-to-End Implementation Using Python
 
@@ -362,7 +362,7 @@ def calculate_overtime_charge(duration_minutes):
     else:
         overtime_minutes = duration_minutes - free_minutes
         intervals = math.ceil(overtime_minutes / 30)
-        charge_amount = intervals * 3  # $3 per 30-minute interval
+        charge_amount = intervals * 3  # £3 per 30-minute interval
         return charge_amount
 
 def end_ride(ride_id, location):
@@ -412,7 +412,7 @@ def end_ride(ride_id, location):
                     INSERT INTO Charge (ride_id, user_id, payment_method_id, amount, charge_time)
                     VALUES (?, ?, ?, ?, DATETIME('now'))
                 """, (ride_id, user_id, payment_method_id, amount))
-                print(f"Overtime charge of ${amount} applied.")
+                print(f"Overtime charge of £{amount} applied.")
             else:
                 raise Exception("No default payment method found for the user.")
         else:
@@ -464,7 +464,7 @@ python end_ride.py
 ```
 
 - **Expected Output**:
-  - "Overtime charge of $6 applied."
+  - "Overtime charge of £6 applied."
   - "Ride ended successfully."
 
 **Explanation**:
@@ -472,7 +472,7 @@ python end_ride.py
 - **Ride Duration**: 225 minutes (3 hours and 45 minutes).
 - **Overtime Minutes**: 225 - 180 = 45 minutes.
 - **Overtime Intervals**: ceil(45 / 30) = 2 intervals.
-- **Overtime Charge**: 2 * $3 = $6.
+- **Overtime Charge**: 2 * £3 = £6.
 
 Verifying the Results
 
@@ -519,7 +519,7 @@ def check_charge():
     charge = cursor.fetchone()
     if charge:
         print("Charge Details:")
-        print(f"Charge ID: {charge[0]}, Amount: ${charge[1]}, Time: {charge[2]}")
+        print(f"Charge ID: {charge[0]}, Amount: £{charge[1]}, Time: {charge[2]}")
     else:
         print("No charge found for this ride.")
 
